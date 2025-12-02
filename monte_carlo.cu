@@ -281,14 +281,14 @@ double black_scholes_price(double S0, double K, double r, double sigma,
 int main(int argc, char *argv[]) {
     srand(time(NULL));
     
-    double S0 = 100.0;
-    double K = 105.0;
-    double r = 0.03;
-    double sigma = 0.2;
-    double T = 1.0;
-    int n_paths = 1000000;
-    int n_steps = 252;
-    char option_type = 'P';
+    double S0 = 100.0; // Initial stock price
+    double K = 105.0;  // Strike price
+    double r = 0.03;  // Risk-free rate
+    double sigma = 0.2; // Volatility
+    double T = 1.0;   // Time to maturity in years
+    int n_paths = 1000000; // Number of Monte Carlo paths  
+    int n_steps = 252; // Number of time steps per path
+    char option_type = 'P'; // 'C' for Call, 'P' for Put
     
     if (argc > 1) n_paths = atoi(argv[1]);
     if (argc > 2) n_steps = atoi(argv[2]);
