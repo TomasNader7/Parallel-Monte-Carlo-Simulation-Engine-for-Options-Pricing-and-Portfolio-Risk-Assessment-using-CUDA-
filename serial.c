@@ -1,4 +1,3 @@
-
 /*
 CSC630/730 Advanced Parallel Computing
 Enhanced Serial Monte Carlo Simulation for European Option Pricing
